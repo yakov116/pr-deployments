@@ -67,7 +67,7 @@ jobs:
           sleep 10
 
           # instead we randomly succeed or fail the deployment
-          exit $(( $RANDOM % 10 >= 5 ))
+          exit $(( 0 ))
 
       - name: set deployment status to success
         id: successful_deployment
